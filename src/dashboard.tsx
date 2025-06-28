@@ -106,10 +106,6 @@ export default function Dashboard() {
   const [orders] = useState<Order[]>(ordersData)
   const [filteredOrders, setFilteredOrders] = useState<Order[]>(ordersData)
   const [filters, setFilters] = useState({
-    dateFrom: "",
-    dateTo: "",
-    minPrice: "",
-    maxPrice: "",
     orderStatus: "all",
     cardType: "all",
     productName: "",
@@ -142,10 +138,6 @@ export default function Dashboard() {
 
   const clearFilters = () => {
     setFilters({
-      dateFrom: "",
-      dateTo: "",
-      minPrice: "",
-      maxPrice: "",
       orderStatus: "all",
       cardType: "all",
       productName: "",
@@ -184,12 +176,10 @@ export default function Dashboard() {
               filters={filters}
               onFilterChange={updateFilter}
               onClearFilters={clearFilters}
-              filteredCount={filteredOrders.length}
-              totalCount={orders.length}
             />
 
             {/* Stats Cards */}
-            <StatCard filteredOrders={filteredOrders} totalOrders={orders.length} />
+            <StatCard filteredOrders={filteredOrders}  />
 
             {/* Orders Grid */}
             <h2 className="mb-2 mt-7 font-medium text-black">All Orders:</h2>

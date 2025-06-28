@@ -3,10 +3,6 @@ import { Button } from "./ui/button"
 import { Input } from "./ui/input"
 
 interface FiltersState {
-  dateFrom: string
-  dateTo: string
-  minPrice: string
-  maxPrice: string
   orderStatus: string
   cardType: string
   productName: string
