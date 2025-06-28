@@ -8,7 +8,7 @@ This project was built with **React**, using **Vite**, **TypeScript**, and **Tai
   - Type of **credit card** used
   - **Product name**  
 - The **navigation buttons** are non-functional placeholders meant to show how the interface might scale into a multi-view layout.
-- I added a **subtle, mouse-responsive gradient background** to introduce a light touch of interactivity and polish without distracting from the core experience.
+- I added a **subtle, mouse-responsive gradient background** to introduce a light touch of interactivity and polish without distracting from the core experience. The colors were pulled from the Hero animation on [Knot](https://www.knotapi.com/)
 - The layout and structure were designed with extensibility in mind—there’s room to add more filters or data groupings (e.g., filter by tax, eligibility, or order total).
 - The UI is fully **responsive**, adapting to various screen sizes and devices.
 - The interface is built with **accessibility** in mind, including proper semantic structure, keyboard focus states, and screen-reader support.
