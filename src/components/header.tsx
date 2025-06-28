@@ -17,7 +17,7 @@ return(
                 <LuSettings className="pointer-events-auto! size-6! transition-transform duration-300 hover:rotate-45 " />
               </Button>
               <div className="flex-grow flex-1 flex-shrink space-x-2">
-                <img className="w-[64px]" src="./assets/knot-logo.svg" />
+                <img className="w-[64px]" src="/assets/knot-logo.svg" />
               </div>
               <div className="flex-grow flex-shrink flex-1">
                 <Input placeholder="Search dashboard" className="w-[200px] border-black" />
