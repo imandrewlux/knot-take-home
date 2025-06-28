@@ -192,6 +192,7 @@ export default function Dashboard() {
             <StatCard filteredOrders={filteredOrders} totalOrders={orders.length} />
 
             {/* Orders Grid */}
+            <h2 className="mb-2 mt-7 font-medium text-black">All Orders:</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
               {filteredOrders.length > 0 ? (
                 filteredOrders.map((order) => (

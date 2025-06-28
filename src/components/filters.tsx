@@ -24,8 +24,9 @@ export default function Filters({ filters, onFilterChange, onClearFilters, filte
 return(
     <>
  {/* Price Range Filter */}
+                <h2 className="mb-2 font-medium text-black">Filters:</h2>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
-
+                
                   {/* Order Status Filter */}
                     <div className="w-full text-sm">
                       <div className="">

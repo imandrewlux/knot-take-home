@@ -49,7 +49,10 @@ interface StatsCardsProps {
 export default function StatCard({ filteredOrders, totalOrders }: StatsCardsProps){
 
     return(
+      <>
+      <h2 className="mb-2 font-medium text-black">Totals:</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+          
               <Card className="">
                 <CardHeader className="space-y-0 pb-2">
                   <CardTitle className="flex flex-no-wrap text-base border-b border-black font-medium text-black pb-1">Total Orders: </CardTitle>
@@ -112,5 +115,6 @@ export default function StatCard({ filteredOrders, totalOrders }: StatsCardsProp
               </Card>
 
             </div>
+            </>
     )
 }
