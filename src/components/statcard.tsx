@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
 import { Badge } from "../components/ui/badge"
-import { FaCheckCircle, FaRegClock, FaTruck, FaQuestion } from "react-icons/fa"
+import { FaCheckCircle, FaRegClock,} from "react-icons/fa"
 
 interface Order {
   id: string
@@ -43,10 +43,9 @@ interface Order {
 
 interface StatsCardsProps {
   filteredOrders: Order[]
-  totalOrders: number
 }
 
-export default function StatCard({ filteredOrders, totalOrders }: StatsCardsProps){
+export default function StatCard({ filteredOrders }: StatsCardsProps){
 
     return(
       <>
@@ -59,9 +58,6 @@ export default function StatCard({ filteredOrders, totalOrders }: StatsCardsProp
                 </CardHeader>
                 <CardContent>
                   <div className="text-4xl md:text-3xl font-medium">{filteredOrders.length}</div>
-                  {/* <p className="text-4xl font-bold">
-                    {props.filteredOrders.length !== props.orders.length ? `Filtered from ${props.orders.length}` : "Active orders"}
-                  </p> */}
                 </CardContent>
               </Card>
 

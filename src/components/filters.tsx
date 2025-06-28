@@ -16,11 +16,9 @@ interface FiltersProps {
   filters: FiltersState
   onFilterChange: (key: string, value: string) => void
   onClearFilters: () => void
-  filteredCount: number
-  totalCount: number
 }
 
-export default function Filters({ filters, onFilterChange, onClearFilters, filteredCount, totalCount }: FiltersProps) {
+export default function Filters({ filters, onFilterChange, onClearFilters }: FiltersProps) {
 return(
     <>
  {/* Price Range Filter */}
